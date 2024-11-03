@@ -1,7 +1,8 @@
 
 import './App.css'
-import DaisyNav from './Components/DaisyNav/DaisyNav'
+
 import HeroSection from './Components/HeroSection/HeroSection'
+import LineChart from './Components/LineChart/LineChart'
 import MyNavbar from './Components/MyNavbar/MyNavbar'
 import PriceOptions from './Components/PriceOptions/PriceOptions'
 
@@ -13,9 +14,9 @@ function App() {
 
 
       <MyNavbar></MyNavbar>
-      {/* <DaisyNav></DaisyNav> */}
       <HeroSection></HeroSection>
       <PriceOptions></PriceOptions>
+      <LineChart></LineChart>
     </>
   )
 }
