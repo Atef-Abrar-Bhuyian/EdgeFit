@@ -1,5 +1,6 @@
 
 import './App.css'
+import Footer from './Components/Footer/Footer'
 
 import HeroSection from './Components/HeroSection/HeroSection'
 import LineChart from './Components/LineChart/LineChart'
@@ -18,6 +19,7 @@ function App() {
       <PriceOptions></PriceOptions>
       <LineChart></LineChart>
       <Trainers></Trainers>
+      <Footer></Footer>
     </>
   )
 }

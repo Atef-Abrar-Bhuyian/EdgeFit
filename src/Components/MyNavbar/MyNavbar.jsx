@@ -25,7 +25,7 @@ const MyNavbar = () => {
         
       </div>
 
-      <ul className={`ml-6 md:flex justify-center items-center text-white px-6 py-2 rounded-xl absolute md:static bg-primary md:bg-transparent h-16 z-10 duration-1000 ${open ? 'top-8' : '-top-60'}`}>
+      <ul className={`ml-6 md:flex justify-center text-white px-6 py-2 rounded-xl absolute md:static bg-primary md:bg-transparent h-18 z-10 duration-1000 ${open ? 'top-8' : '-top-60'}`}>
         {routes.map((route) => (
           <Link key={route.id} route={route}></Link>
         ))}
