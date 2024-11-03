@@ -17,7 +17,7 @@ const MyNavbar = () => {
 
   return (
     <nav>
-      <div className="pl-6 p-2 text-2xl md:hidden bg-primary" onClick={() => setOpen(!open)}>
+      <div className="pl-4 pt-2 h-12 text-white text-2xl md:hidden bg-primary" onClick={() => setOpen(!open)}>
         {
             open === !true ? <RiMenu2Line/> : <MdCancel/>
 
@@ -25,7 +25,7 @@ const MyNavbar = () => {
         
       </div>
 
-      <ul className={`ml-6 md:flex justify-center px-6 py-2 rounded-xl absolute md:static bg-red-600 md:bg-transparent  z-10 duration-1000 ${open ? 'top-8' : '-top-60'}`}>
+      <ul className={`ml-6 md:flex justify-center items-center text-white px-6 py-2 rounded-xl absolute md:static bg-primary md:bg-transparent h-16 z-10 duration-1000 ${open ? 'top-8' : '-top-60'}`}>
         {routes.map((route) => (
           <Link key={route.id} route={route}></Link>
         ))}
